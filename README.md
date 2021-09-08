@@ -10,7 +10,7 @@ Welcome to contact us for more technique details and discussions: zhiruow@andrew
 + **2021-9-2**: We released [HiTab](https://github.com/microsoft/HiTab), a large dataset on question answering and data-to-text over complex hierarchical tables. 
 
 + **2021-8-17**: We presented our work in [KDD'21](https://dl.acm.org/doi/abs/10.1145/3447548.3467434). 
-+ 
+
 + **2020-10-21**: We released our [paper](https://arxiv.org/abs/2010.12537) on arXiv. 
 
 ## Contributing
