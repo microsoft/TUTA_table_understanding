@@ -1,0 +1,777 @@
+#Table	next_331%37.xlsx	2.2	A3	I59
+#Merged
+#Top
+B5:E5
+#Top
+F4:H4
+#Left
+A6:A59
+#IndexSet	A6:A59
+#IndexName	A5
+#IndexSet	B5:E5
+#IndexName	@Semantic	Month
+#IndexSet	F4:H4
+#IndexName	@Semantic	Import type
+#IndexSet	B3:I3
+#IndexName	@Semantic	Register type
+#ValueName[]	
+
+#Table	next_6%571.xlsx	T-Bill Paper	A2	G139
+#Merged
+#Top
+B2:G2
+#Left
+A3:A139
+#IndexSet	B2:G2
+#IndexName	@Semantic	Paper or T-Bill mth
+#IndexSet	A3:A139
+#IndexName	@Semantic	Date
+#ValueName[]
+
+#Table	next_174%559.xlsx	data	A21	E146
+#Merged
+#Top
+#Left
+#IndexSet
+#IndexName
+#ValueName[X_Value]	A21
+#ValueName[0Vout]	B21
+#ValueName[1Vneg]	C21
+#ValueName[2VsigSin]	D21
+#ValueName[3VsigDC]	E21
+
+#Table	next_249%865.xlsx	fact sheet 2	A2	G35
+#Merged
+#Top
+D2&	F2&
+D4:E4
+F4:G4
+#Left
+A3&	A10&	A23&	A30&
+A5:A9
+A11&	A19&
+A24:A29
+A31:A35
+A12:A18
+A20:A22
+#IndexSet	D2	F2
+#IndexName	@Semantic	DLHS-3/DLHS-2
+#IndexSet	D4:G4
+#IndexName	@Semantic	Total/Rural
+#IndexSet	A3	A10	A23	A30
+#IndexName	A2
+#IndexSet	A5:A9
+#IndexName	A3
+#IndexSet	A11	A19
+#IndexName	A10
+#IndexSet	A24:A29
+#IndexName	A23
+#IndexSet	A31:A35
+#IndexName	A30
+#IndexSet	A12:A18
+#IndexName	A11
+#IndexSet	A20:A22
+#IndexName	A19
+#ValueName[]
+
+#Table	next_527%270.xlsx	Growth Rates Annualised	A1	Q21
+#Merged
+#Top
+B2&	E2&	I2&	O2	P2	Q2
+C2:D2
+F2:H2
+J2:N2
+#Left
+A3:A21
+#IndexSet	B2	E2	I2	O2	P2	Q2
+#IndexName	@Semantic	the Type of Industries
+#IndexSet	C2:D2
+#IndexName	B2
+#IndexSet	F2:H2
+#IndexName	E2
+#IndexSet	J2:N2
+#IndexName	I2
+#IndexSet	A3:A21
+#IndexName	@Semantic	Different Years
+#ValueName[]
+
+#Table	next_200%194.xlsx	First 24 weeks	A1	E25
+#Merged
+#Top
+#Left
+A2:A25
+#IndexSet	A2:A25
+#IndexName	A1
+#ValueName[#HHs]	B1
+#ValueName[Propn.ofHouseholds]	C1
+#ValueName[ModelledProportion]	D1
+#ValueName[diff]	E1
+
+#Table	next_98%776.xlsx	Graph Italy	L7	N26
+#Merged
+#Top
+#Left
+L8:L26
+#IndexSet	L8:L26
+#IndexName	L7
+#ValueName[Netlending/borrowing]	M7
+#ValueName[PrimaryBalance]	N7
+
+#Table	july_630.xlsx	CF	A5	I19
+#Merged
+#Top
+B5	C5
+#Left
+A7:A19
+#IndexSet	A7:A19
+#IndexName	A5
+#IndexSet	B5	C5
+#IndexName	@Semantic	Year
+#ValueName[MAX2003to2012]	D5
+#ValueName[MAX1993to2012]	E5
+#ValueName[MAXsince1955]	F5
+#ValueName[min2003to2012]	G5
+#ValueName[min1993to2012]	H5
+#ValueName[minsince1955]	I5
+
+#Table	july_648.xlsx	T2.3	A3	V35
+#Merged	C3:D4	F3:G4	I3:J4	L3:M4	O3:P4	R3:S4	U3:V4
+#Top
+C3&	F3&	I3&	L3&	O3&	R3&	U3&
+C5:D5
+F5:G5
+I5:J5
+L5:M5
+O5:P5
+R5:S5
+U5:V5
+#Left
+A8&	A14&	A23&	A35
+A9	A10	A12
+A15:A19	A21
+A24:A31	A33
+#IndexSet	A8:A35
+#IndexName	A5
+#IndexSet	C3	F3	I3	I3	L3	O3	R3	U3
+#IndexName	@Semantic	Type
+#IndexSet	C5:D5	F5:G5	I5:J5	L5:M5	O5:P5	R5:S5	U5:V5
+#IndexName	@Semantic	Enrol Or EFTSU
+#ValueName[]
+
+#Table	july_671.xlsx	Sheet1	A9	X16
+#Merged	B9:D9	E9:I9	J9:N9	O9:S9	T9:X9
+#Top
+B9	E9	J9	O9	T9
+#Left
+A10:A16
+#IndexSet	A10:A16
+#IndexName	@Title	Impacts of the American Power Act
+#IndexSet	B9	E9	J9	O9	T9
+#IndexName	@Semantic	Year
+#ValueName[]
+
+#Table	july_705.xlsx	Education All State	A2	K56
+#Merged
+#Top
+B3	D2&	H2&
+D3:F3
+H3:J3
+#Left
+A5:A56
+#IndexSet	A5:A56
+#IndexName	@Semantic	State
+#IndexSet	B3	D2	H2
+#IndexName	@Semantic	Type
+#IndexSet	D3:F3	H3:J3
+#IndexName	@Semantic	Expenditures
+#ValueName[EnrollmentPct.Public]	C3
+#ValueName[Tuition&FeesPercentofSpending]	G3
+#ValueName[FeesPercentofSpending]	K3
+
+#Table	july_732.xlsx	rha graph data	A3	K36
+#Merged
+#Top
+I3:K3
+#Left
+A5:A36
+#IndexSet	A5:A36
+#IndexName	A3
+#IndexSet	I3:K3
+#IndexName	@Semantic	Area
+#ValueName[]
+
+#Table	july_772.xlsx	Sheet1	A1	N4
+#Merged
+#Top
+B1:N1
+#Left
+A2:A4
+#IndexSet	A2:A4
+#IndexName	@Semantic	Goal No.
+#IndexSet	B1:N1
+#IndexName	@Semantic	Date
+#ValueName[]
+
+#Table	july_792.xlsx	Level	A5	AP10
+#Merged
+#Top
+B5:AP5
+#Left
+A6:A10
+#IndexSet	A6:A10
+#IndexName	@Semantic	CPRS Or Garnaut
+#IndexSet	B5:AP5
+#IndexName	@Semantic	Year
+#ValueName[]
+
+#Table	july_1346.xlsx	Sheet1	A1	I4
+#Merged
+#Top
+B1:I1
+#Left
+#IndexSet	B1:I1
+#IndexName	@Semantic	Year
+#ValueName[ComplaintNoViolationInvestigations]	A2
+#ValueName[ComplaintNoViolationInvestigations]	A3
+#ValueName[%DirectedInvestigations]	A4
+
+#Table	july_1864.xlsx	Sheet1	A1	O7
+#Merged
+#Top
+I1:M1
+#Left
+A2:A7
+#IndexSet	A2:A7
+#IndexName	A1
+#IndexSet	I1:M1
+#IndexName	@Semantic	Number of rmx
+#ValueName[tree]	B1
+#ValueName[spp]	C1
+#ValueName[dbh]	D1
+#ValueName[cc]	E1
+#ValueName[ht]	F1
+#ValueName[hc]	G1
+#ValueName[hwmx]	H1
+#ValueName[rth90]	N1
+#ValueName[rch90]	O1
+
+#Table	0174.xlsx	Sheet1	B2	I27
+#Merged	D2:F2	G2:I2
+#Top
+D2&	G2&
+D3:F3
+G3:I3
+#Left
+B4&	B6&	B8&	B10&	B12&	B14&	B16&	B18&	B20&	B22&	B24&	B26&
+C4:C5
+C6:C7
+C8:C9
+C10:C11
+C12:C13
+C14:C15
+C16:C17
+C18:C19
+C20:C21
+C22:C23
+C24:C25
+C26:C27
+#IndexSet	D2	G2
+#IndexName	@Semantic	year
+#IndexSet	D3:F3	G3:I3
+#IndexName	@Semantic	bucket number
+#IndexSet	B4	B6	B8	B10	B12	B14	B16	B18	B20	B22	B24	B26
+#IndexName	B3
+#IndexSet	C4:C5	C6:C7	C8:C9	C10:C11	C12:C13	C14:C15	C16:C17	C18:C19	C20:C21	C22:C23	C24:C25	C26:C27
+#IndexName	C3
+#ValueName[]
+
+#Table	0401.xlsx	Graphics data	A3	C65
+#Merged	A4:A15	A16:A27	A28:A39	A40:A51	A52:A63	A64:A65
+#Top
+#Left
+A4&	A16&	A28&	A40&	A52&	A64&
+B4:B15
+B16:B27
+B28:B39
+B40:B51
+B52:B63
+B64:B65
+#IndexSet	A4	A16	A28	A40	A52	A64
+#IndexName	A3
+#IndexSet	B4:B15	B16:B27	B28:B39	B40:B51	B52:B63	B64:B65
+#IndexName	B3
+#ValueName[UnemployedNumber]	C3
+
+#Table	0506.xlsx	chart2grwth	A28	M41
+#Merged	A28:A30	B28:G28	H28:M28	B29:B30	C29:C30	D29:D30	E29:E30	F29:F30	G29:G30	H29:H30	I29:I30	J29:J30	K29:K30	L29:L30	M29:M30
+#Top
+B28	H28
+#Left
+A31:A41
+#IndexSet	B28	H28
+#IndexName	@Semantic	Revenue Source
+#IndexSet	A31:A41
+#IndexName	A28
+#ValueName[Value]	B29	H29
+#ValueName[GrowthValue]	C29	I29
+#ValueName[%Growth]	D29	J29
+#ValueName[ValueExcludeGrowth]	E29	K29
+#ValueName[AnnChg]	F29	L29
+#ValueName[CmltvChg]	G29	M29
+
+#Table	0589.xlsx	Time Dashboard	A1	AG8
+#Merged
+#Top
+B1&	F1&	J1&	N1&	R1&	V1&	Z1&	AD1&
+B2:D2
+F2:H2
+J2:L2
+N2:P2
+R2:T2
+V2:X2
+Z2:AB2
+AD2:AF2
+#Left
+A3:A8
+#IndexSet	B1	F1	J1	N1	R1	V1	Z1	AD1
+#IndexName	@Semantic	year
+#IndexSet	A3:A8
+#IndexName	A2
+#IndexSet	B2:D2	F2:H2	J2:L2	N2:P2	R2:T2	V2:X2	Z2:AB2	AD2:AF2
+#IndexName	@Semantic	Planned Or Actual Hrs
+#ValueName[percentage]	E2	I2	M2	Q2	U2	Y2	AC2	AG2
+
+#Table	0674.xlsx	Table 5c	A2	D18
+#Merged
+#Top
+#Left
+A3:A18
+#IndexSet	A3:A18
+#IndexName	A2
+#ValueName[N]	B2
+#ValueName[averageLG]	C2
+#ValueName[AGL]	D2
+
+#Table	0987.xlsx	Clevedon	A3	S17
+#Merged
+#Top
+B3	D3	F3	H3	J3	L3	N3	P3	R3
+#Left
+A5:A17
+#IndexSet	B3	D3	F3	H3	J3	L3	N3	P3	R3
+#IndexName	@Semantic	month at year
+#IndexSet	A5:A17
+#IndexName	A4
+#ValueName[UnitNo.]	B4	D4	F4	H4	J4	L4	N4	P4	R4
+#ValueName[percentage]	C4	E4	G4	I4	K4	M4	O4	Q4	S4
+
+#Table	next_0%169.xlsx	Figure 2-5	A63	F86
+#Merged
+#Top
+B63:D63
+#Left
+A64:A86
+#IndexSet	B63:D63
+#IndexName	@Semantic	Year
+#IndexSet	A64:A86
+#IndexName	@Semantic	Country
+#ValueName[Growth%]	E63
+#ValueName[Share%]	F63
+
+#Table	next_2%7.xlsx	Tab_1_final	A3	F41
+#Merged
+#Top
+B3:F3
+#Left
+A4:A41
+#IndexSet	B3:F3
+#IndexName	@Title	Goods And Service
+#IndexSet	A4:A41
+#IndexName	@Semantic	Country
+#ValueName[]
+
+#Table	next_4%270.xlsx	Sheet1	A12	G21
+#Merged
+#Top
+B13:G13
+#Left
+A14:A21
+#IndexSet	B13:G13
+#IndexName	B12
+#IndexSet	A14:A21
+#IndexName	A13
+#ValueName[]
+
+#Table	next_0%270.xlsx	4 Inferential 2	B163	H167
+#Merged
+#Top
+#Left
+B164:B167
+#IndexSet	B164:B167
+#IndexName	B163
+#ValueName[SS]	C163
+#ValueName[df]	D163
+#ValueName[MS]	E163
+#ValueName[F]	F163
+#ValueName[PValue]	G163
+#ValueName[FCrit]	H163
+
+#Table	next_2%505.xlsx	Stats (i7)	H1	T16
+#Merged
+#Top
+P1:T1
+#Left
+H2&	H7&	H12&
+I2:I6
+I7:I11
+I12:I16
+#IndexSet	P1:T1
+#IndexName	@Semantic	Name
+#IndexSet	H2	H7	H12
+#IndexName	@Semantic	Week
+#IndexSet	I2:I6	I7:I11	I12:I16
+#IndexName	I1
+#ValueName[ManDaysToday]	J1
+#ValueName[ManDaysCumulative]	K1
+#ValueName[StoryPoints]	L1
+#ValueName[StoryPoints_ActualToday]	M1
+#ValueName[StoryPoints_ActualCumulative]	N1
+
+#Table	next_3%902.xlsx	Technologies and jobs per MW	A11	O39
+#Merged
+#Top
+E13:G13
+#Top
+H12&	J12&	L12&
+H13:I13
+J13:K13
+L13:O13
+#Left
+#IndexSet	E13:G13
+#IndexName	E11
+#IndexSet	H12	J12	L12
+#IndexName	H11
+#IndexSet	H13:I13	J13:K13	L13:O13
+#IndexName	@Semantic	CIM Or O&M
+#ValueName[EnergyTechnology]	A13
+#ValueName[SourceOfNumbers]	B13
+#ValueName[CapacityFactor]	C11
+#ValueName[EquipmentLifeTime(years)]	D11
+
+#Table	next_5%559.xlsx	CPCF-jb	B4	N34
+#Merged
+#Top
+D5:N5
+#Left
+B31:B32
+#Left
+B33:B34
+#Left
+B8&	B13&	B18&	B23&	B28&
+C6:C10
+C11:C15
+C16:C20
+C21:C25
+C26:C30
+#IndexSet	D5:N5
+#IndexName	@Semantic	Year
+#IndexSet	B8	B13	B18	B23	B28
+#IndexName	B4
+#IndexSet	C6:C10	C11:C15	C16:C20	C21:C25	C26:C30
+#IndexName	C4
+#IndexSet	B31:B32
+#IndexName	@Semantic	Gender
+#IndexSet	B33:B34
+#IndexName	@Semantic	Full-Time or Part-Time
+#ValueName[HeadCountEnrolments(Including Coop)]	D4
+
+#Table	next_5%597.xlsx	Town	A5	I6
+#Merged
+#Top
+#Left
+A6:A15
+#IndexSet	A6:A15
+#IndexName	A5
+#ValueName[IDNo]	B5
+#ValueName[Name]	C5
+#ValueName[Intern]	D5
+#ValueName[Status]	E5
+#ValueName[Hotel]	F5
+#ValueName[Contact]	G5
+#ValueName[Zone]	H5
+#ValueName[VisitBy]	I5
+
+#Table	next_181%169.xlsx	Data CPI	A2	N37
+#Merged
+#Top
+B2:N2
+#Left
+A3:A37
+#IndexSet	B2:N2
+#IndexName	@Semantic	Month
+#IndexSet	A3:A37
+#IndexName	@Semantic	Year
+#ValueName[]
+
+#Table	next_184%580.xlsx	WT&BAL	A9	F19
+#Merged
+#Top
+#Left
+A10:A19
+#IndexSet	A10:A19
+#IndexName	@Title	Pilot and Copilot Detail
+#ValueName[Weight]	C9
+#ValueName[Arm]	D9
+#ValueName[Product]	E9
+#ValueName[CG]	F9
+
+#Table	next_185%559.xlsx	Pinto Bean	A4	K16
+#Merged
+#Top
+B4:K4
+#Left
+A5:A16
+#IndexSet	B4:K4
+#IndexName	@Semantic	Year
+#IndexSet	A5:A16
+#IndexName	@Title	Pinto Bean Details
+#ValueName[]
+
+#Table	next_187%571.xlsx	Base Model	L5	O18
+#Merged	L5:L6	M5:M6	N5:N6	O5:O6
+#Top
+#Left
+#IndexSet
+#IndexName
+#ValueName[Workforce=0]	L5
+#ValueName[Inventory&DemandSatisfaction=0]	M5
+#ValueName[Production>=0]	N5
+#ValueName[Overtine>=0]	O5
+
+#Table	next_196%7.xlsx	Sheet	E1	G10
+#Merged
+#Top
+#Left
+#IndexSet
+#IndexName
+#ValueName[Y]	E1
+#ValueName[D_Centimeter^2/Second]	F1
+#ValueName[Cs]	G1
+
+#Table	next_198%965.xlsx	precip.txt	A4	H33
+#Merged	B4:B6	C4:C6	D6:D7	E4:E6	G4:G6	H6:H7
+#Top
+B4	C4	D6
+#Top
+E4	G4	H6
+#Left
+A9	A11	A13	A15	A17	A19	A21	A23	A25	A27	A29	A31	A33
+#IndexSet	B4	C4	D6
+#IndexName	@Semantic	Precipitation
+#IndexSet	E4	G4	H6
+#IndexName	@Semantic	Snowfall Precipitation
+#IndexSet	A9	A11	A13	A15	A17	A19	A21	A23	A25	A27	A29	A31	A33
+#IndexName	@Semantic	Month
+#ValueName[]
+
+#Table	next_201%366.xlsx	Sheet2	A3	I20
+#Merged	B3:C3	E3:F3	H3:I3	B4:B5	E4:E5	H4:H5	A4:A5
+#Top
+B3	E3	H3
+#Left
+A7:A20
+#IndexSet	B3	E3	H3
+#IndexName	@Semantic	Urban Or Rural
+#IndexSet	A7:A20
+#IndexName	A4
+#ValueName[AssistanceGroups]	B4	E4	H4
+#ValueName[Percent]	C5	F5	I5
+
+#Table	next_193%35.xlsx	Sheet2	A1	G83
+#Merged
+#Top
+#Left
+A3:A83
+#IndexSet	A3:A83
+#IndexName	A1
+#ValueName[register]	B1
+#ValueName[year]	C1
+#ValueName[FREQ]	D1
+#ValueName[adj_pre]	E1
+#ValueName[noun_pre]	F1
+#ValueName[rels]	G1
+
+#Table	next_210%272.xlsx	Chart CO1.7.A	L7	N47
+#Merged
+#Top
+M7:N7
+#Left
+L8:L47
+#IndexSet	M7:N7
+#IndexName	@Title	Gender
+#IndexSet	L8:L47
+#IndexName	@Semantic	Country
+#ValueName[]
+
+#Table	next_218%270.xlsx	T11.30	A3	P35
+#Merged
+#Top
+C3:P3
+#Left
+A5&	A10	A11&	A16	A20	A24	A28	A32	A35
+B6:B7
+B12:B15
+#IndexSet	C3:P3
+#IndexName	@Semantic	Year
+#IndexSet	A5	A10	A11	A16	A20	A24	A28	A32	A35
+#IndexName	@Title	Telephone Calls and Website Hits
+#IndexSet	B6:B7
+#IndexName	A5
+#IndexSet	B12:B15
+#IndexName	A11
+#ValueName[]
+
+#Table	next_221%327.xlsx	Weather Zones	A25	M41
+#Merged
+#Top
+B25:M25
+#Left
+A26	A28	A30	A32	A34	A36	A38	A40
+#Left
+A27	A29	A31	A33	A35	A37	A39	A41
+#IndexSet	B25:M25
+#IndexName	@Semantic	Month
+#IndexSet	A26	A28	A30	A32	A34	A36	A38	A40
+#IndexName	A25
+#IndexSet	A27	A29	A31	A33	A35	A37	A39	A41
+#IndexName	@Title	Date and Time
+#ValueName[]
+
+
+#Table	next_229%327.xlsx	Wholesale - Russia & Other	A3	L14
+#Merged
+#Top
+B3:G3	I3:L3
+#Left
+A4:A14
+#IndexSet	A4:A14
+#IndexName	A3
+#IndexSet	B3:G3	I3:L3
+#IndexName	@Semantic	Quarter
+#ValueName[]
+
+#Table	next_234%880.xlsx	G-1.0	A3	P28
+#Merged
+#Top
+D3:O3
+#Left
+A5	A8	A10
+#Left
+A16	A22
+#IndexSet	A5	A8	A10
+#IndexName	@Semantic	Gender
+#IndexSet	A16	A22
+#IndexName	@Semantic	Students
+#IndexSet	D3:O3
+#IndexName	@Semantic	Year
+#ValueName[%AnnualGrowth]	A6
+#ValueName[%Men]	A9
+#ValueName[%Women]	A11
+#ValueName[%AnnualGrowth]	A14
+#ValueName[F.T.E.S.]	A13
+#ValueName[Gender]	A17:A18	A23:A24
+#ValueName[%Full-Time]	A19
+#ValueName[%Part-Time]	A25
+#ValueName[AverageAge,PTStudents]	A26
+#ValueName[AverageGraduateStudentAge]	A28
+#ValueName[10-yr\chng]	P3
+
+#Table	next_60%965.xlsx	2005 last updated	A8	E20
+#Merged
+#Top
+#Left
+B9:B20
+#IndexSet	B9:B20
+#IndexName	B8
+#ValueName[Rank]	A8
+#ValueName[BD]	C8
+#ValueName[US$]	D8
+#ValueName[%OfTotal]	E8
+
+#Table	next_252%366.xlsx	Sheet2	A1	F21
+#Merged
+#Top
+#Left
+#IndexSet
+#IndexName
+#ValueName[Time]	A1
+#ValueName[Offense]	B1
+#ValueName[Location]	C1
+#ValueName[Victim/Information]	D1
+#ValueName[COMP#]	E1
+#ValueName[DSN]	F1
+
+#Table	next_267%37.xlsx	Sheet1	A3	I7
+#Merged
+#Top
+C3:I3
+#Left
+A4:A7
+#Left
+B4:B7
+#IndexSet	C3:I3
+#IndexName	@Semantic	Date
+#IndexSet	A4:A7
+#IndexName	A3
+#IndexSet	B4:B7
+#IndexName	B3
+#ValueName[]
+
+#Table	next_269%639.xlsx	norway_en	B3	J17
+#Merged	D3:D4	E3:E4	F3:F4	G3:G4	H3:H4	I3:I4	J3:J4
+#Top
+D3	F3	G3
+#Left
+B5:B16
+#Left
+C5:C17
+#IndexSet	D3	F3	G3
+#IndexName	@Semantic	Actual
+#IndexSet	B5:B16
+#IndexName	@Semantic	Number
+#IndexSet	C5:C17
+#IndexName	B3
+#ValueName[2016UnitRateBasis]	E3
+#ValueName[%2016A/2016F]	H3
+#ValueName[%2016A/2015A]	I3
+#ValueName[%2015A/2014A]	J3
+
+#Table	next_276%865.xlsx	Emissions-TEU	A2	E48
+#Merged
+#Top
+C2:E2
+#Left
+A3:A8
+#Left
+A10&	A15&	A20&	A25&	A30&	A35&	A40&	A45&
+A11:A13
+A16:A18
+A21:A23
+A26:A28
+A31:A33
+A36:A38
+A41:A43
+A46:A48
+#Left
+B3:B48
+#IndexSet	C2:E2
+#IndexName	@Semantic	Project 
+#IndexSet	A3:A8
+#IndexName	@Semantic	Container ship parameters 
+#IndexSet	A10	A15	A20	A25	A30	A35	A40	A45
+#IndexName	@Semantic	Consumption or emissions
+#IndexSet	A11:A13	A16:A18	A21:A23	A26:A28	A31:A33	A36:A38	A41:A43	A46:A48
+#IndexName	@Semantic	Consumption or emissions parameters
+#IndexSet	B3:B48
+#IndexName	@Semantic	Units
+#ValueName[]
