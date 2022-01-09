@@ -5,7 +5,7 @@ Welcome to contact us for more technique details and discussions: zhiruow@andrew
 
 ## :beers: Updates
 
-+ **Stay tuned!**: Code and data of cell type classification.
++ **2022-01-09**: Cell type classification.
 
 + **2021-10-29**: Code of TUTA.
 
@@ -53,6 +53,25 @@ To perform the task of table type classification at downstream:
 - for data processing, use `SheetReader` in the reader.py and `TtcTokenizer` in the tokenizer.py; 
 - for fine-tuning, use the `TtcHead` and `TUTA(base)forTTC` in the ./model/ directory.
 
+For an end-to-end trial, run:
+```bash
+python ctc_finetune.py                                           \
+--folds_path="${dataset_dir}/folds_deex5.json"                    \
+--data_file="${dataset_dir}/deex.json"                            \
+--pretrained_model_path="${tuta_model_dir}/tuta.bin"             \
+--output_model_path="${tuta_model_dir}/tuta-ctc.bin"              \
+--target="tuta"                                                   \
+--device_id=0                                                   \
+--batch_size=2                                                   \
+--max_seq_len=512                                                 \
+--max_cell_num=256                                                 \
+--epochs_num=40                                                   \
+--attention_distance=2                                             
+```
+
+A preprocessed dataset of DeEx can be downloaded from:
+* [Dataset](https://drive.google.com/file/d/1xJkq2DQciWvndhgm0aHZXMqzIWSan9z9/view?usp=sharing)
+* [Fold](https://drive.google.com/file/d/1COmU9sRB4cQIBsA3l0qb0mXTLFrYu_zI/view?usp=sharing)
 
 ## Data Pre-processing
 For a sample raw table file input, run
