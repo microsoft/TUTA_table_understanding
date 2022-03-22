@@ -3,7 +3,7 @@
 python tuta/train.py \
     --batch_size 8 \
     --pretrained_model_path checkpoints/fortap/tuta.bin \
-    --output_model_path checkpoints/fortap/fortap.bin \
+    --output_model_path checkpoints/formula_prediction/fortap.bin \
     --chunk_size 10000 \
     --buffer_size 400000 \
     --report_steps 200 \

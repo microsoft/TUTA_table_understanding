@@ -57,7 +57,7 @@ Here are some brief explanations:
 + `op_mlm_weight`: operator-level Formula MLM weight
 + `range_mlm_weight`: range-level Formula MLM weight
 
-The pretrain corpus for ForTaP hasn't been released now.
+The pretrain corpus for ForTaP is not public available now.
 
 
 ## Fine-tune
@@ -68,7 +68,7 @@ python train.py \
     --target formula_prediction \
     --dataset_paths ./data/formula_prediction/enron_train_fortap_input.pt \
     --pretrained_model_path checkpoints/fortap/fortap.bin \
-    --output_model_path checkpoints/fortap/fortap-fp.bin \
+    --output_model_path checkpoints/formula_prediction/fortap-fp.bin \
     --save_checkpoint_steps 50000 \
     --buffer_size 1000 \
     --chunk_size 1000 \
@@ -107,25 +107,25 @@ There are seven items in one sample:
 If you would like to use ForTaP on formula prediction, you may use the pre-tokenized format [enron_{train/test}_fortap_input.pt](https://drive.google.com/drive/folders/1hPnxXDZe6G_f2sjLJANJz86z-HZ1tWFW?usp=sharing)
 for ForTaP, otherwise you can use the raw format.
 
-We also provide [the fine-tuned FoRTaP on enron (fortap-fp.bin-800000)](https://drive.google.com/drive/folders/1pqLyzl-E3Ed-mJncfa_GxTlYLE1NZiRF) for users to inference formula prediction, 
-which is expected to achieve $55.8\%$ top-1 accuracy on test set.
+We also provide [the fine-tuned ForTaP on enron (fortap-fp.bin-800000)](https://drive.google.com/drive/folders/1pqLyzl-E3Ed-mJncfa_GxTlYLE1NZiRF) for users to inference formula prediction, 
+which is expected to achieve 55.8% top-1 accuracy on test set.
 
 
 ### Question Answering
 We evaluate question answer on [HiTab](https://github.com/microsoft/HiTab) fully based on its codebase, 
 by replacing the BERT encoder with ForTaP.
 
-To get the performance shown in the paper, pay attention to some points shown in the paper:
+To get the best performance, pay attention to some points shown in the paper:
 + We further pretrain ForTaP for 80K steps on table-text NRP setting. 
 The [ForTaP further pretrained on table-text NRP (fortap-80000moreNRP.bin)](https://drive.google.com/drive/folders/1pqLyzl-E3Ed-mJncfa_GxTlYLE1NZiRF) checkpoint is also provided in the link. You may use it for the best QA performance.
 + Use a simple attention mask instead of tree attention.
 + Disable warmup steps for parsing.
 
-**Note:** HiTab has corrected about $1.5\%$ samples and upgrades its heuristics to parse table hierarchies 
+**Note:** HiTab has corrected about 1.5% samples and upgrades its heuristics to parse table hierarchies 
 since ForTaP paper release, thus the current QA performance might be higher than reported.
 
 ### Add New Tasks
-You can use ForTaP/TUTA for other downstream tasks by adding another pipeline.
+You can use ForTaP (also TUTA) as a table-text encoder for other downstream tasks by adding another pipeline.
 Please reference  the `--target` in `train.py`. 
 
 Specifically, you may modify `train.py`, `trainers.py`, `dynamic_data.py`, `tokenizer.py`,  `model/heads.py`, `model/pretrains.py` to add a new pipeline.
