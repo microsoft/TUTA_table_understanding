@@ -3,28 +3,32 @@ This is the official repository of:
 + [TUTA:Tree-based Transformers for Generally Structured Table Pre-training](https://arxiv.org/abs/2010.12537) 
 + [ForTaP:Using Formulae for Numerical-Reasoning-Aware Table Pretraining](https://arxiv.org/abs/2109.07323).
 
-TUTA is a unified pretrained model for understanding generally structured tables. Based on TUTA, ForTaP furthers endows the model with stronger numerical-reasoning skills by pretraining on spreadsheet formulas.
+TUTA is a unified pretrained model for understanding generally structured tables. 
+
+Based on TUTA, ForTaP further endows the model with stronger numerical-reasoning skills by pretraining on spreadsheet formulas.
 
 
 ## :beers: News
 
-+ **2022-03-08**: ForTaP was accepted by ACL 2022.
++ **2022-03-22**: We released ForTaP code.
 
-+ **2022-01-09**: We updated Cell type classification code for TUTA.
++ **2022-03-08**: ForTaP was accepted by *ACL 2022*. You may find [ForTaP paper](https://arxiv.org/abs/2109.07323) here.
+
++ **2022-01-09**: We updated cell type classification code for TUTA.
 
 + **2021-10-29**: We released TUTA code.
 
 + **2021-9-2**: We released [HiTab](https://github.com/microsoft/HiTab), a large dataset on question answering and data-to-text over complex hierarchical tables. 
 
-+ **2021-8-17**: TUTA was accepted by [KDD'21](https://dl.acm.org/doi/abs/10.1145/3447548.3467434). 
++ **2021-8-17**: TUTA was accepted by [*KDD 2021*](https://dl.acm.org/doi/abs/10.1145/3447548.3467434). 
 
-+ **2020-10-21**: We released our [paper](https://arxiv.org/abs/2010.12537) on arXiv. 
++ **2020-10-21**: We released our [TUTA paper](https://arxiv.org/abs/2010.12537) on arXiv. 
 
 
 ## Code and Usages
-Detailed implementation and usages of the pretrain models are shown in their folders:
-+ [TUTA]()
-+ [ForTaP]()
+Detailed implementations and usages of the pretrain models are shown in their folders:
++ [TUTA](https://github.com/microsoft/TUTA_table_understanding/tree/main/tuta)
++ [ForTaP](https://github.com/microsoft/TUTA_table_understanding/tree/main/fortap)
 
 ## Citation
 If you find TUTA and ForTaP useful in your research, please consider citing following papers:
