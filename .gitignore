@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# added
+venv/
+.idea/
+fortap/checkpoints/
+fortap/data/
+fortap/experiments.md
+fortap/scripts.md

@@ -1,103 +1,56 @@
-# Table Understanding with Tree-based Attention (TUTA)
+# Table Understanding
+This is the official repository of:
++ [TUTA:Tree-based Transformers for Generally Structured Table Pre-training](https://arxiv.org/abs/2010.12537) 
++ [ForTaP:Using Formulae for Numerical-Reasoning-Aware Table Pretraining](https://arxiv.org/abs/2109.07323).
 
-Please keep tuned after we complete the internal process of publishing TUTA's model and code. 
-Welcome to contact us for more technique details and discussions: zhiruow@andrew.cmu.edu, hadong@microsoft.com
+TUTA is a unified pretrained model for understanding generally structured tables. Based on TUTA, ForTaP furthers endows the model with stronger numerical-reasoning skills by pretraining on spreadsheet formulas.
 
-## :beers: Updates
 
-+ **2022-01-09**: Cell type classification.
+## :beers: News
 
-+ **2021-10-29**: Code of TUTA.
++ **2022-03-08**: ForTaP was accepted by ACL 2022.
+
++ **2022-01-09**: We updated Cell type classification code for TUTA.
+
++ **2021-10-29**: We released TUTA code.
 
 + **2021-9-2**: We released [HiTab](https://github.com/microsoft/HiTab), a large dataset on question answering and data-to-text over complex hierarchical tables. 
 
-+ **2021-8-17**: We presented our work in [KDD'21](https://dl.acm.org/doi/abs/10.1145/3447548.3467434). 
++ **2021-8-17**: TUTA was accepted by [KDD'21](https://dl.acm.org/doi/abs/10.1145/3447548.3467434). 
 
 + **2020-10-21**: We released our [paper](https://arxiv.org/abs/2010.12537) on arXiv. 
 
-## Models
-We provide three variants of pre-trained TUTA models: TUTA (-implicit), TUTA-explicit, and TUTA-base.
-These pre-trained TUTA variants can be downloaded from:
-* [TUTA](https://drive.google.com/file/d/1pEdrCqHxNjGM4rjpvCxeAUchdJzCYr1g/view?usp=sharing)
-* [TUTA-explicit](https://drive.google.com/file/d/1FPwn2lQKEf-cGlgFHr4_IkDk_6WThifW/view?usp=sharing)
-* [TUTA-base](https://drive.google.com/file/d/1j5qzw3c2UwbVO7TTHKRQmTvRki8vDO0l/view?usp=sharing)
 
+## Code and Usages
+Detailed implementation and usages of the pretrain models are shown in their folders:
++ [TUTA]()
++ [ForTaP]()
 
-## Training
-To run pretraining tasks, simply run
-```bash
-python train.py                                           \
---dataset_paths="../dataset.pt"                              \
---pretrained_model_path="${tuta_model_dir}/tuta.bin"      \
---output_model_path="${tuta_model_dir}/trained-tuta.bin"
-
-# to enable a quick test, one can run
-python train.py  --batch_size 1  --chunk_size 10  --buffer_size 10  --report_steps 1  --total_steps 20
-
-# to enable multi-gpu distributed training, additionally specify 
---world_size 4  --gpu_ranks 0 1 2 3
+## Citation
+If you find TUTA and ForTaP useful in your research, please consider citing following papers:
 ```
-Do make sure that the number of input `dataset_paths` is no less that the `world_size` (i.e. number of `gpu_ranks`). \
-One can find more adjustable arguments in the main procedure.
-
-
-## Downstream tasks
-
-### __Cell Type Classification (CTC)__
-To perform the task of cell type classification at downstream: 
-- for data processing, use `SheetReader` in the reader.py and `CtcTokenizer` in the tokenizer.py; 
-- for fine-tuning, use the `CtcHead` and `TUTA(base)forCTC` in the ./model/ directory.
-
-### __Table Type Classification (TTC)__
-To perform the task of table type classification at downstream: 
-- for data processing, use `SheetReader` in the reader.py and `TtcTokenizer` in the tokenizer.py; 
-- for fine-tuning, use the `TtcHead` and `TUTA(base)forTTC` in the ./model/ directory.
-
-For an end-to-end trial, run:
-```bash
-python ctc_finetune.py                                           \
---folds_path="${dataset_dir}/folds_deex5.json"                    \
---data_file="${dataset_dir}/deex.json"                            \
---pretrained_model_path="${tuta_model_dir}/tuta.bin"             \
---output_model_path="${tuta_model_dir}/tuta-ctc.bin"              \
---target="tuta"                                                   \
---device_id=0                                                   \
---batch_size=2                                                   \
---max_seq_len=512                                                 \
---max_cell_num=256                                                 \
---epochs_num=40                                                   \
---attention_distance=2                                             
+@inproceedings{wang2021tuta,
+  title={TUTA: Tree-based Transformers for Generally Structured Table Pre-training},
+  author={Wang, Zhiruo and Dong, Haoyu and Jia, Ran and Li, Jia and Fu, Zhiyi and Han, Shi and Zhang, Dongmei},
+  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+  pages={1780--1790},
+  year={2021}
+}
 ```
 
-A preprocessed dataset of DeEx can be downloaded from:
-* [Dataset](https://drive.google.com/file/d/1xJkq2DQciWvndhgm0aHZXMqzIWSan9z9/view?usp=sharing)
-* [Fold](https://drive.google.com/file/d/1COmU9sRB4cQIBsA3l0qb0mXTLFrYu_zI/view?usp=sharing)
-
-## Data Pre-processing
-For a sample raw table file input, run
-```bash
-# for SpreadSheet
-python prepare.py                          \
---input_dir ../data/pretrain/spreadsheet   \
---source_type sheet                        \
---output_path ../dataset.pt
-
-# for WikiTable
-python prepare.py                                      \
---input_path ../data/pretrain/wiki-table-samples.json  \
---source_type wiki                                     \
---output_path ../dataset.pt
-
-# for WDCTable
-python prepare.py                         \
---input_dir ../data/pretrain/wdc          \
---source_type wdc                         \
---output_path ../dataset.pt
+```
+@article{cheng2021fortap,
+  title={FORTAP: Using Formulae for Numerical-Reasoning-Aware Table Pretraining},
+  author={Cheng, Zhoujun and Dong, Haoyu and Cheng, Fan and Jia, Ran and Wu, Pengfei and Han, Shi and Zhang, Dongmei},
+  journal={arXiv preprint arXiv:2109.07323},
+  year={2021}
+}
 ```
 
-will generate a semi-processed version for pre-training inputs.
+## Contact
+If you have any problems regarding the paper or code, please feel free to submit issues in this repository. Or you can reach us by emails.
 
-Input this data file as an argument into the pre-training script, then the data-loader will dynamically process for three pre-training objectives, namely Masked Language Model (MLM), Cell-Level Cloze(CLC), and Table Context Retrieval (TCR).
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
