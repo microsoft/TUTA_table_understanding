@@ -17,7 +17,7 @@ These pre-trained TUTA variants can be downloaded from:
 To run pretraining tasks, simply run
 ```bash
 python train.py                                           \
---dataset_paths="../dataset.pt"                              \
+--dataset_paths="./dataset.pt"                              \
 --pretrained_model_path="${tuta_model_dir}/tuta.bin"      \
 --output_model_path="${tuta_model_dir}/trained-tuta.bin"
 
@@ -68,21 +68,21 @@ For a sample raw table file input, run
 ```bash
 # for SpreadSheet
 python prepare.py                          \
---input_dir ../data/pretrain/spreadsheet   \
+--input_dir ./data/pretrain/spreadsheet   \
 --source_type sheet                        \
---output_path ../dataset.pt
+--output_path ./dataset.pt
 
 # for WikiTable
 python prepare.py                                      \
---input_path ../data/pretrain/wiki-table-samples.json  \
+--input_path ./data/pretrain/wiki-table-samples.json  \
 --source_type wiki                                     \
---output_path ../dataset.pt
+--output_path ./dataset.pt
 
 # for WDCTable
 python prepare.py                         \
---input_dir ../data/pretrain/wdc          \
+--input_dir ./data/pretrain/wdc          \
 --source_type wdc                         \
---output_path ../dataset.pt
+--output_path ./dataset.pt
 ```
 
 will generate a semi-processed version for pre-training inputs.
