@@ -282,7 +282,7 @@ class FPDataloader(object):
                 all_candi_cell_token_mask[isample].extend(
                     [0] * (batch_max_seq_len - len(all_candi_cell_token_mask[isample])))
                 all_range_label[isample].extend([DEFAULT_RANGE_LABEL] * (
-                            batch_max_sketch_len - len(all_range_label[isample])))  # !这里改变了semi_input中的range_label，很坑。
+                            batch_max_sketch_len - len(all_range_label[isample])))
 
                 # truncate
                 all_token_id[isample] = all_token_id[isample][: self.max_seq_len]

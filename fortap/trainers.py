@@ -244,7 +244,7 @@ def train_tuta_fp(args, gpu_id, rank, loader, model, optimizer, scheduler):
         total_fp_top5_crt += fp_top5_crt
         total_fp_cnt += fp_cnt
 
-        if steps % args.report_steps == 0 and (not args.dist_train or (args.dist_train and rank == 0)):  # 只汇报gpu:0
+        if steps % args.report_steps == 0 and (not args.dist_train or (args.dist_train and rank == 0)):
             elapsed = time.time() - start_time
             done_tokens = \
                 args.batch_size * token_id.size(1) * args.report_steps * args.world_size \
@@ -416,7 +416,7 @@ def train_tuta_fortap(args, gpu_id, rank, loader, model, optimizer, scheduler):
                      + total_op_mlm_loss * args.op_mlm_weight + total_range_mlm_loss * args.range_mlm_weight \
                      + total_sr_context_loss * args.sr_context_weight
 
-        if steps % args.report_steps == 0 and (not args.dist_train or (args.dist_train and rank == 0)):  # 只汇报gpu:0
+        if steps % args.report_steps == 0 and (not args.dist_train or (args.dist_train and rank == 0)):
             elapsed = time.time() - start_time
             done_tokens = \
                 args.batch_size * token_id.size(1) * args.report_steps * args.world_size \

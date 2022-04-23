@@ -308,8 +308,8 @@ class LMbase(nn.Module):
         """
         device = formula_cell_states.device
         seq = torch.LongTensor([self.tokenizer.fp_tok2id('<START>')]).to(
-            device)  # NOTE:补全开头token，去除末尾token！很重要！
-        bs_gen_tokens = self.bs.beam_search(  # encoded_states不需要取第一个吗?
+            device)
+        bs_gen_tokens = self.bs.beam_search(
             seq, self.sketch_logits, self.range_logits, encoded_states, candi_cell_token_mask, formula_cell_states,
             last_token=True, sketch_only=False)
         gen_tokens = []
