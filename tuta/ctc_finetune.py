@@ -422,7 +422,10 @@ def Pipeline(args, model, dataset_couples, no_decay=['bias', 'gamma', 'beta']):
 
         tok_f1 = [(2*p*r)/(p+r+1e-6) for p,r in zip(tok_precision, tok_recall)]
         print("[TOK] f1: ", [round(value, 3) for value in tok_f1], sum(tok_f1)/6)
-        return [max(s,t) for s,t in zip(sep_f1, tok_f1)]
+        if args.sep_or_tok != 0:
+            return [s for s,t in zip(sep_f1, tok_f1)]
+        else: 
+            return [t for s,t in zip(sep_f1, tok_f1)]
     
     # Do Training
     param_optimizer = list(model.named_parameters())
