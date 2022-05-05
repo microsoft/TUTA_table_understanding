@@ -488,7 +488,7 @@ def Pipeline(args, model, dataset_couples, no_decay=['bias', 'gamma', 'beta']):
 def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     # i/o paths
-    parser.add_argument("--folds_path", type=str, default="example/folds_saus5.json", help="Path of the splitted folds content json.")
+    parser.add_argument("--folds_path", type=str, default="example/folds_deex5.json", help="Path of the splitted folds content json.")
     parser.add_argument("--data_file", type=str, default="deex.json", help="Directory of the hierarchical json files.")
     # add train/dev/test files
     parser.add_argument("--pretrained_model_path", type=str, default="sqall-2-512-tab-1007.bin-1000000", help="Path of the pretrained bert/ts model.")
