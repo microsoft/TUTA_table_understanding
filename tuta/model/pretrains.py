@@ -99,7 +99,7 @@ class TUTAforCTC(nn.Module):
 
 class TUTAbaseforCTC(nn.Module):
     def __init__(self, config):
-        super(nn.Module, self).__init__()
+        super(TUTAbaseforCTC, self).__init__()
         self.backbone = bbs.BBS[config.target](config)
         self.ctc_head = hds.CtcHead(config)
 
