@@ -2,9 +2,6 @@
 
 The 'websheet' folder corresponds to the WebSheet dataset, in which the folder 'Files' includes a random selection of 50 tables (spreadsheets), and the 'annotations.txt' provides their labeled regions of three types, i.e. IndexName, Index, and ValueName.
 
-# Pre-training data samples
-For Spreadsheet, Wiki Table, and Wdc Table, respectively.
-
 For spreadsheet tables, the json file contains keys as follows:
 
 T: cell text (explicitly revealed to humans, e.g.,58.50%)
