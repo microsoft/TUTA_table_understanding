@@ -60,8 +60,8 @@ python ctc_finetune.py                                           \
 ```
 
 A preprocessed dataset of DeEx can be downloaded from:
-* [Dataset](https://drive.google.com/file/d/1xJkq2DQciWvndhgm0aHZXMqzIWSan9z9/view?usp=sharing)
-* [Fold](https://drive.google.com/file/d/1COmU9sRB4cQIBsA3l0qb0mXTLFrYu_zI/view?usp=sharing)
+* [Dataset](https://1drv.ms/u/s!AmjPfaszItzIh0U4pfx-Sxq_wgv4?e=pGF453)
+* [Fold](https://1drv.ms/u/s!AmjPfaszItzIh0U4pfx-Sxq_wgv4?e=pGF453)
 
 ## Data Pre-processing
 For a sample raw table file input, run
