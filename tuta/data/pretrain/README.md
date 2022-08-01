@@ -36,7 +36,6 @@ I: if has font italic, 0 or 1
 HA: horizontal alignment (center=0, center_across_selection=1,distributed=2,fill=3,general=4,justify=5,left=6,right=7)
 
 VA: vertical alignment (top=0,center=1,bottom=2,justify=3,distributed=4)
-# Datasets for Cell Type Classification (CTC)
 
 O: operator of the formula, only used in ForTap
 
