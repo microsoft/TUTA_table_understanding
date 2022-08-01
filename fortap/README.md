@@ -57,7 +57,7 @@ Here are some brief explanations:
 + `op_mlm_weight`: operator-level Formula MLM weight
 + `range_mlm_weight`: range-level Formula MLM weight
 
-The pretrain corpus for ForTaP is not public available now.
+The pretrain corpus for ForTaP is not public available now. All data are processed to the JSON format shown at https://github.com/microsoft/TUTA_table_understanding/tree/main/tuta/data/pretrain, and then are processed to be pt format through prepare.py.
 
 
 ## Fine-tune
