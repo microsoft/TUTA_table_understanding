@@ -206,7 +206,14 @@ def create_sample(table, tokenizer, args):
     format_matrix = table["format_matrix"]
     position_lists = table["position_lists"]
     label_matrix = table["label_matrix"]
-    range = table["range"]
+    table_range = table["range"]
+    
+    # add formula prefix to cell string
+    formula_cell_prefix = "=#"
+    for i in range(len(format_matrix)):
+        for j in range(len(format_matrix[0])):
+            if format_matrix[i][j][7] > 0:
+                string_matrix[i][j] = formula_cell_prefix + string_matrix[i][j]
     
     token_matrix, number_matrix = tokenizer.tokenize_string_matrix(
         string_matrix=string_matrix, add_separate=True, max_cell_len=sys.maxsize
@@ -222,7 +229,7 @@ def create_sample(table, tokenizer, args):
             position_lists=position_lists, 
             format_matrix=format_matrix, 
             label_matrix=label_matrix, 
-            range=range, max_seq_len=args.max_seq_len, max_cell_length=args.max_cell_length
+            range=table_range, max_seq_len=args.max_seq_len, max_cell_length=args.max_cell_length
         )
         
     for seq in seqs:
