@@ -47,7 +47,8 @@ For an end-to-end trial, run:
 ```bash
 python ctc_finetune.py                                           \
 --folds_path="${dataset_dir}/folds_deex5.json"                    \
---data_file="${dataset_dir}/deex.json"                            \
+--flat_json_path="${dataset_dir}/deex.jl"                            \
+--hier_dir="${dataset_dir}/deex"                            \
 --pretrained_model_path="${tuta_model_dir}/tuta.bin"             \
 --output_model_path="${tuta_model_dir}/tuta-ctc.bin"              \
 --target="tuta"                                                   \
