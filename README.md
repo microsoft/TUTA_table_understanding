@@ -13,7 +13,7 @@ Based on TUTA, ForTaP further endows the model with stronger numerical-reasoning
   
 + **2024-7-15**: [A tutorial on “Large Language Models for Tabular Data”](https://github.com/HaoAreYuDong/Large-Language-Models-for-Tabular-Data/) at SIGIR 2024.
   
-+ **2022-7-23**: [A survey on “Table Pretraining”](https://github.com/HaoAreYuDong/Large-Language-Models-for-Tabular-Data/) at IJCAI 2022.
++ **2022-7-23**: [A survey on “Table Pretraining: A Survey on Model Architectures, Pretraining Objectives, and Downstream Tasks”](https://arxiv.org/pdf/2201.09745) at IJCAI 2022.
 
 + **2022-03-22**: We released ForTaP code.
 
