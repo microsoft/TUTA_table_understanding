@@ -9,6 +9,11 @@ Based on TUTA, ForTaP further endows the model with stronger numerical-reasoning
 
 
 ## :beers: News
++ **2024-11-12**: [“Encoding Spreadsheets for Large Language Models”](https://arxiv.org/pdf/2407.09025) at EMNLP 2024.
+  
++ **2024-7-15**: [A tutorial on “Large Language Models for Tabular Data”](https://github.com/HaoAreYuDong/Large-Language-Models-for-Tabular-Data/) at SIGIR 2024.
+  
++ **2022-7-23**: [A survey on “Table Pretraining”](https://github.com/HaoAreYuDong/Large-Language-Models-for-Tabular-Data/) at IJCAI 2022.
 
 + **2022-03-22**: We released ForTaP code.
 
