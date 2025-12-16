@@ -9,8 +9,8 @@ Based on TUTA, ForTaP further endows the model with stronger numerical-reasoning
 
 
 ## :beers: News
-+ **2025-12-26**: Releasing [Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows](https://huggingface.co/papers/2512.13168).
-+ 
++ **2025-12-26**: Releasing a new benchmark, [Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows](https://huggingface.co/papers/2512.13168).
+  
 + **2024-11-12**: [“Encoding Spreadsheets for Large Language Models”](https://arxiv.org/pdf/2407.09025) at EMNLP 2024.
   
 + **2024-7-15**: [A tutorial on “Large Language Models for Tabular Data”](https://github.com/HaoAreYuDong/Large-Language-Models-for-Tabular-Data/) at SIGIR 2024.
